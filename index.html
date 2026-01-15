@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduMedia - Belajar Jadi Menyenangkan</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">Edu<span class="highlight">Media</span></a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Beranda</a></li>
+          <li><a href="#features">Fitur</a></li>
+          <li><a href="#courses">Materi</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact" class="btn-nav">Hubungi Kami</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="badge">Media Pembelajaran Interaktif</span>
+          <h1>Belajar Jadi Lebih <br><span class="text-gradient">Mudah & Seru</span></h1>
+          <p>Akses ribuan materi pembelajaran interaktif, video, dan kuis untuk meningkatkan pemahamanmu kapan saja dan
+            di mana saja.</p>
+          <div class="hero-buttons">
+            <a href="#courses" class="btn btn-primary">Mulai Belajar</a>
+            <a href="#features" class="btn btn-outline">Pelajari Lebih Lanjut</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- Placeholder for illustration -->
+          <div class="illustration-placeholder">
+            <div class="floating-card card-1">
+              <span>📚</span>
+              <p>100+ Materi</p>
+            </div>
+            <div class="floating-card card-2">
+              <span>🎓</span>
+              <p>Sertifikat</p>
+            </div>
+            <div class="circle-bg"></div>
+            <img src="https://placehold.co/600x400/png?text=Learning+Illustration" alt="Belajar Online"
+              class="hero-img-real" style="display:none;">
+            <!-- Using CSS shape for now -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Kenapa Memilih EduMedia?</h2>
+          <p>Platform terbaik untuk mendukung proses belajarmu</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="icon-box">🚀</div>
+            <h3>Akses Cepat</h3>
+            <p>Platform ringan dan cepat diakses dari berbagai perangkat.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-box">🎮</div>
+            <h3>Interaktif</h3>
+            <p>Belajar tidak membosankan dengan elemen gamifikasi.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-box">📱</div>
+            <h3>Mobile Friendly</h3>
+            <p>Desain responsif yang nyaman dibuka di smartphone.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-box">💡</div>
+            <h3>Materi Terupdate</h3>
+            <p>Kurikulum yang selalu diperbarui sesuai standar terbaru.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course/Material Section -->
+    <section id="courses" class="courses">
+      <div class="container">
+        <div class="section-header">
+          <h2>Jelajahi Materi</h2>
+          <div class="search-bar">
+            <input type="text" id="course-search" placeholder="Cari materi pelajaran...">
+            <button aria-label="Search">🔍</button>
+          </div>
+        </div>
+
+        <div class="categories">
+          <button class="cat-btn active" data-filter="all">Semua</button>
+          <button class="cat-btn" data-filter="sains">Sains</button>
+          <button class="cat-btn" data-filter="math">Matematika</button>
+          <button class="cat-btn" data-filter="bahasa">Bahasa</button>
+          <button class="cat-btn" data-filter="tech">Teknologi</button>
+        </div>
+
+        <div id="course-grid" class="course-grid">
+          <!-- Course cards will be injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Siap Untuk Meningkatkan Prestasi?</h2>
+          <p>Bergabunglah dengan ribuan siswa lainnya sekarang juga.</p>
+          <a href="#" class="btn btn-light">Daftar Gratis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+      <div class="container footer-content">
+        <div class="footer-col">
+          <h3>EduMedia</h3>
+          <p>Platform media pembelajaran masa depan untuk generasi emas Indonesia.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Tautan</h4>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#courses">Materi</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <p>Email: hello@edumedia.id</p>
+          <p>Telp: +62 812 3456 7890</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 EduMedia. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
